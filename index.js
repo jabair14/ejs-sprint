@@ -2,7 +2,7 @@ const express = require('express');
 // const faker = require('faker');
 const req = require('express/lib/request');
 const app = express();
-const port = "5400";
+const port = process.env.PORT || 5400;
 
 
 app.set("view engine", "ejs");
