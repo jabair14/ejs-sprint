@@ -8,7 +8,8 @@ const port = "5400";
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.send("my server has started");
+    // res.send("my server has started");
+    res.render("home")
 })
 
 app.get("/home", (req, res) => {
@@ -56,10 +57,17 @@ app.get("/spacetrail", (req, res) => {
     res.render("spacetrail")
 })
 
-// app.get("/spacetrail/:name", (req, res) => {
-//     const name = req.params['name']
-//     res.render("spacetrail", {name: name})
-// })
+app.get("/thematrix", (req, res) => {
+    res.render("thematrix")
+})
+
+app.get("/thematrix/redpill", (req, res) => {
+    res.render("redpill")
+})
+
+app.get("/truth", (req, res) => {
+    res.render("truth")
+})
 
 
 app.listen(port, () => {

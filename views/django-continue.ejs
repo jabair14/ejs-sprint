@@ -25,9 +25,23 @@
 
         }
 
+        a {
+            color: red;
+            font-size: 40px;
+            padding: 5px;
+        }
+
         .exit {
-            position: absolute;
+            position: fixed;
             bottom: 0px;
+            background-color: white;
+        }
+
+        .restart {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: white;
         }
 
     </style>
@@ -36,10 +50,7 @@
     <div class="main">
         <h1> Django the Giant!  </h1>
         <p> 
-            One of the fiercest explorers this side of the mississippi, 
-            Bojack's team finally made it to the end of the dangerous Oregon Trail.
-            Bojack's fearless leadership and decision making helped them nagivate famime, 
-            cold weather and countless other obstacles as they found there new land in Oregon.
+            Django was probably the smartest of all the explorers.  Known for his many talents along the trail, perhaps his greatest skill was knowing when to leave the trail.  Django left the Oregon trail and had his expedition 'follow the gold'.  Upon striking gold in the northern California mountains, his group became the wealthiest expedition in human history. 
     
         </p>
 
@@ -50,6 +61,7 @@
 
     <div class= "exit">
         <a href="/home"> EXIT </a>
+        <a class="restart" href="/oregontrail"> RESTART </a>
     </div>
 </body>
 </html>
