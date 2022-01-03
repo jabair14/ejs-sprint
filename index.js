@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 
     if ( req.session && req.session.username){
         user = req.session.username;
-        punctuation = ",";
+        punctuation = ", ";
     }
     res.render("index", {my_user: user, punctuation: punctuation, invalid_login: invalid_login})
 })
@@ -167,7 +167,7 @@ app.get("/spacetrail", (req, res) => {
     if (req.session && req.session.username) {
         user = req.session.username;
         punctuation = ",";
-        res.render("spacetrail", {my_user: user});
+        res.render("spacetrail", {my_user: user, punctuation: punctuation});
     } else{
         res.redirect("/");
     }

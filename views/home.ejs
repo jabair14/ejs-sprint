@@ -24,12 +24,21 @@
 
         }
 
+        .user {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            margin-left: 15px;
+
+        }
+
     </style>
 </head>
 <body>
     <div class="main">
         <h1> Welcome to Oregon Trail</h1>
-        <h2> Choose Your Path <%= my_user %> </h2>
+        <h2> Choose Your Path<%= punctuation  %> <%= my_user %> </h2>
         
     
         <span class="links">
@@ -37,6 +46,9 @@
             <br>
             <a href="/spacetrail"> The Truth Trail </a>
         </span>
+        <div class="user">
+            <p> Username: <strong> <%= my_user %> </strong></p>
+        </div>
     </div>
     
 </body>
